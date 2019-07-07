@@ -1,0 +1,15 @@
+﻿  光照.cpp
+e:\opengl_\sketchstylerendring\光照\光照.cpp(131): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\opengl_\sketchstylerendring\光照\光照.cpp(308): warning C4305: “初始化”: 从“double”到“float”截断
+e:\opengl_\sketchstylerendring\光照\光照.cpp(351): warning C4018: “<”: 有符号/无符号不匹配
+e:\opengl_\sketchstylerendring\光照\光照.cpp(379): warning C4244: “参数”: 从“float”转换到“GLsizei”，可能丢失数据
+e:\opengl_\sketchstylerendring\光照\光照.cpp(381): warning C4244: “参数”: 从“float”转换到“GLsizei”，可能丢失数据
+e:\opengl_\sketchstylerendring\光照\光照.cpp(383): warning C4244: “参数”: 从“float”转换到“GLsizei”，可能丢失数据
+e:\opengl_\sketchstylerendring\光照\光照.cpp(483): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\opengl_\sketchstylerendring\光照\光照.cpp(484): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\opengl_\sketchstylerendring\光照\光照.cpp(488): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\opengl_\sketchstylerendring\光照\光照.cpp(489): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+e:\opengl_\sketchstylerendring\光照\光照.cpp(491): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\opengl_\sketchstylerendring\光照\光照.cpp(492): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+e:\opengl_\sketchstylerendring\光照\光照.cpp(498): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  光照.vcxproj -> E:\OpenGL_\SketchStyleRendring\Debug\光照.exe
