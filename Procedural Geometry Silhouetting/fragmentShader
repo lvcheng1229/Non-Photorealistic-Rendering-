@@ -1,0 +1,38 @@
+#version 330 core
+out vec4 FragColor;
+
+in vec3 WorldPos;
+in vec3 Normal;
+
+uniform vec3 lightPos;
+uniform vec3 viewPos;
+
+uniform bool isFront;
+void main()
+{
+	vec3 Normal=normalize(Normal);
+
+		
+	vec3 objectColor=vec3(0.9,0.3,0);
+	vec3 lightColor=vec3(1.0,1.0,1.0);
+	
+
+	vec3 lightDir=normalize(lightPos-WorldPos); 
+	vec3 viewDir=normalize(viewPos-WorldPos);	
+
+
+
+	vec3 ambient=objectColor*0.1;
+	vec3 diffuse=objectColor*max(dot(lightDir,Normal),0);
+
+	vec3 reflectDir = normalize(reflect(-lightDir, Normal));
+	vec3 halfDir=normalize(reflectDir+viewDir);
+	vec3 specular=objectColor*pow(max(dot(halfDir,viewDir),0),64);
+	vec3 result=(ambient+diffuse+specular)*lightColor;
+	
+	if(!isFront)
+		FragColor=vec4(0.0,0.0,1.0,1.0);
+	else
+		FragColor=vec4(result,1.0);
+}
+
